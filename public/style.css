@@ -2,6 +2,7 @@ body {
     background: #42275a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#FFFFFF;
 }
 
 /*
@@ -11,6 +12,7 @@ gradation => https://uigradients.com/
 #wrap {
     margin:30px;
     z-index:1;
+    margin-bottom:80px;
 }
 
 #titleWord {
@@ -26,6 +28,9 @@ gradation => https://uigradients.com/
     right:0;
     border-radius:0px 0px 0px 10px;
     z-index:20;
+    font-size:35px;
+    text-align:center;
+    line-height:70px;
 }
 
 .contentCard {
@@ -38,15 +43,65 @@ gradation => https://uigradients.com/
 
 .boxBar {
     margin-bottom:10px;
+    border-top:15px;
 }
 
-.white {
-    color:#FFFFFF;
+#border1 {
+    border-top:5px solid #4D90E2;
+    width:70%;
+}
+
+#border2 {
+    border-top:5px solid #E446B5;
+    width:50%;
+}
+
+#border3 {
+    border-top:5px solid #F1AB3E;
+    width:40%;
+}
+
+#border4 {
+    border-top:5px solid #53B66A;
+    width:30%;
+}
+
+#border5 {
+    border-top:5px solid #FAFDFB;
+    width:10%;
+}
+
+#border6 {
+    border-top:5px solid #E446B5;
+    width:80%;
+}
+
+#border7 {
+    border-top:5px solid #4D90E2;
+    width:60%;
+}
+
+#border8 {
+    border-top:5px solid #53B66A;
+    width:100%;
+}
+
+.statBox {
+    margin-top:-20px;
+}
+
+.iconBox {
+    margin-top:-30px;
+    font-size:25px;
 }
 
 .stat {
     font-size:25px;
     font-weight:bold;
+}
+
+.unit {
+    font-size:12px;
 }
 
 #footer {
@@ -60,6 +115,7 @@ gradation => https://uigradients.com/
 
 .footerBox {
     height:70px;
-    line-height:70px;
-    color:#FFFFFF;
+    padding-top:15px;
+    font-size:13px;
+    color:#eaeaea;
 }

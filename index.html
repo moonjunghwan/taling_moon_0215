@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
@@ -18,7 +19,9 @@
                     <h4 id="titleWord">Analytics</h4>
                 </div>
                 <div class="col-6">
-                    <div id="rightTopBox"></div>
+                    <div id="rightTopBox">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>        
         </div>
@@ -30,6 +33,7 @@
             <div class="row">
                 <div class="col-6">
                     <h5 class="white">Octorber</h5>
+                    <p style="color:#f2f2f2; margin-top:-10px;">2016</p>
                 </div>
                 <div class="col-6 text-right">
                     <h2 class="white">$203</h2>
@@ -44,47 +48,28 @@
             <div class="row">
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Water</p>
-                        <p class="white">
+                        <div class="boxBar" id="border1"></div>
+                        <p>Water</p>
+                        <p class="statBox">
                             <span class="stat">6.3</span>
-                            <span>KL<span>
+                            <span class="unit">KL<span>
                         </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-tint"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Heating</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
+                        <div class="boxBar" id="border2"></div>
+                        <p>Heating</p>
+                        <p class="statBox">
+                            <span class="stat">5.2</span>
+                            <span class="unit">GJ<span>
                         </p>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-6">
-                    <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Water</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Heating</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
-                        </p>
+                        <div class="text-right iconBox">
+                            <i class="fab fa-hotjar"></i>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -94,22 +79,28 @@
             <div class="row">
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Water</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
+                        <div class="boxBar" id="border3"></div>
+                        <p>Electricity</p>
+                        <p class="statBox">
+                            <span class="stat">8.3</span>
+                            <span class="unit">MWH<span>
                         </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-bolt"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Heating</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
+                        <div class="boxBar" id="border4"></div>
+                        <p>Internet</p>
+                        <p class="statBox">
+                            <span class="stat">37</span>
+                            <span class="unit">GB<span>
                         </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-plug"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,22 +110,59 @@
             <div class="row">
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Water</p>
-                        <p class="white">
-                            <span class="stat">6.3</span>
-                            <span>KL<span>
+                        <div class="boxBar" id="border5"></div>
+                        <p>Renovation</p>
+                        <p class="statBox">
+                            <span class="stat">21</span>
+                            <span class="unit">USD<span>
                         </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-tint"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="contentCard">
-                        <div class="border-top border-primary boxBar"></div>
-                        <p class="white">Heating</p>
-                        <p class="white">
+                        <div class="boxBar" id="border6"></div>
+                        <p>Heating</p>
+                        <p class="statBox">
                             <span class="stat">6.3</span>
-                            <span>KL<span>
+                            <span class="unit">KL<span>
                         </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="contentCard">
+                        <div class="boxBar" id="border7"></div>
+                        <p>Water</p>
+                        <p class="statBox">
+                            <span class="stat">6.3</span>
+                            <span class="unit">KL<span>
+                        </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="contentCard">
+                        <div class="boxBar" id="border8"></div>
+                        <p>Heating</p>
+                        <p class="statBox">
+                            <span class="stat">6.3</span>
+                            <span class="unit">KL<span>
+                        </p>
+                        <div class="text-right iconBox">
+                            <i class="fas fa-tint"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,10 +173,22 @@
     <footer id="footer">
         <div class="container-fulid">
             <div class="row">
-                <div class="col-3 text-center footerBox">1</div>
-                <div class="col-3 text-center footerBox">2</div>
-                <div class="col-3 text-center footerBox">3</div>
-                <div class="col-3 text-center footerBox">4</div>
+                <div class="col-3 text-center footerBox">
+                    <i class="far fa-star"></i>
+                    <p>Profile</p>
+                </div>
+                <div class="col-3 text-center footerBox">
+                    <i class="fas fa-signal"></i>
+                    <p>Analytice</p>
+                </div>
+                <div class="col-3 text-center footerBox">
+                    <i class="fas fa-plus"></i>
+                    <p>Your Data</p>
+                </div>
+                <div class="col-3 text-center footerBox">
+                    <i class="far fa-comment-alt"></i>
+                    <p>Support</p>
+                </div>
             </div>
         </div>
     </footer>
